@@ -1,0 +1,304 @@
+.Navbar {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbarring {
+    width: 150px;
+    height: 250px;
+}
+
+@media (max-width:725px) {
+    .navbarring {
+        width: 100px;
+        height: 200px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbarring {
+        width: 80px;
+        height: 150px;
+    }
+}
+
+
+.Navbelow {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.backgroundtextstyle {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #dadada;
+}
+
+@media (max-width:637px) {
+    .backgroundtextstyle {
+        font-size: 4rem;
+    }
+
+
+}
+
+
+@media (max-width:780px) {
+    .cardtextstyle {
+        font-size: 0.6rem !important;
+    }
+
+    .itemsbackgroundstyle {
+        height: 77% !important;
+    }
+
+    .cards {
+        width: 25% !important;
+    }
+}
+
+
+.menuitems {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menuvertical:hover {
+    transform: scale(1.1);
+    font-weight: 400;
+}
+
+.menuitems:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width:525px) {
+    .backgroundtextstyle {
+        font-size: 2.8rem;
+    }
+
+    .textresponsivestyle {
+        padding-top: 10px;
+        margin: 0;
+        font-size: 0.6rem !important;
+    }
+
+    .footerpages {
+        font-size: 0.8rem;
+    }
+}
+
+.cardtextstyle {
+    color: rgb(164 156 156);
+    font-size: 0.9rem;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    position: relative;
+}
+
+.itemsbackgroundstyle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: #F7B79D;
+    z-index: -1;
+    margin-top: 13%;
+}
+
+@media (max-width:625px) {
+    .textresponsivestyle {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+.cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(148 144 144 / 20%);
+    position: absolute;
+    width: 16.66%;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.cards:hover:not(.active).left1 {
+    transform: translateX(-140%) scale(0.79);
+    background-color: white;
+
+}
+
+.cards:hover:not(.active).right1 {
+    transform: translateX(140%) scale(0.79);
+    background-color: white;
+
+}
+
+
+.cards:hover:not(.active).left {
+    transform: translateX(-70%) scale(0.9);
+    background-color: white;
+    z-index: 1;
+}
+
+.cards:hover:not(.active).right {
+    transform: translateX(70%) scale(0.9);
+    background-color: white;
+    z-index: 1;
+
+
+}
+
+.cards.left {
+    transform: translateX(-70%) scale(0.9);
+    background-color: white;
+    z-index: 1;
+
+
+}
+
+.cards.right {
+    transform: translateX(70%) scale(0.9);
+    background-color: white;
+    z-index: 1;
+
+}
+
+.cards.left1 {
+    transform: translateX(-140%) scale(0.79);
+    background-color: white;
+}
+
+.cards.right1 {
+    transform: translateX(140%) scale(0.79);
+    background-color: white;
+
+}
+
+.cards.active {
+    z-index: 5;
+    background-color: white;
+    position: relative;
+}
+
+.cards__inner {
+    position: relative;
+    /* padding-bottom: 158.8235294118%; */
+}
+
+.productDetail {
+    padding: 10px 50px 10px 50px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.CollectionCard {
+    width: calc(25% - 20px);
+    background-color: #FFFFFF;
+}
+
+h4 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+
+.inputstyle {
+    text-decoration: none;
+    min-width: 300px;
+    outline: none;
+    border: none;
+}
+
+.signUpstyle {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-flow: nowrap;
+}
+
+.subsignup {
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width:900px) {
+    .signUpstyle {
+        width: 96%;
+    }
+}
+
+@media (max-width:700px) {
+    .signUpstyle {
+        width: 90%;
+        flex-flow: wrap;
+    }
+
+    .subsignup {
+        width: 80%;
+    }
+
+}
+
+.footercompany {
+    display: flex;
+    gap: 40px;
+    width: 50%;
+}
+
+@media (max-width:600px) {
+    .footercompany {
+        gap: 20px;
+        align-items: center;
+        
+    }
+}
+
+.footercompanylist {
+    flex-flow: nowrap;
+}
+
+@media (max-width:890px) {
+    .footercompanylist {
+        flex-flow: wrap;  
+    }
+    .footercompany {
+        /* gap: 20px; */
+        justify-content: center;
+        margin: auto ;
+        
+    }
+}
+
+/* @media (max-width:800px) {
+    .footerimages {
+        width: 70px !important;
+        height: 30px;
+    }
+} */
+
+.footerimages {
+    width: 100px;
+    height: 30px;
+}
